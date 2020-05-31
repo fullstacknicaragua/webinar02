@@ -1,0 +1,27 @@
+-------------------------------------Tercer escenario ----------------------------------
+-------------------------------------Trabajo remoto-------------------------------------
+----------------------------------------------------------------------------------------
+
+cd ..
+
+mkdir Escenario3
+
+cd Escenario3
+
+git init
+
+git remote add origin https://github.com/fullstacknicaragua/PruebasGIT
+--añadimos un control remoto origin para el repositorio en la URL
+
+git fetch
+--recupera la información más reciente de metadatos 
+--(no se transfiere ningun archivo, verifica si hay algun cambio disponible)
+
+git pull origin master
+--trae copia de todos los cambios desde el repositorio remoto
+
+git clone https://gitlab.com/fullstacknicaragua/gitpruebas
+--permite obtener una copia de un repositorio de gitlab existente
+--pedira contraseña si es la primera vez que se conecta a esa cuenta
+
+ls -lart

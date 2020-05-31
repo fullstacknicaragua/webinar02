@@ -1,0 +1,69 @@
+-------------------------------------Primer escenario ----------------------------------
+-----------------------------Parametrización inicial de GIT-----------------------------
+----------------------------------------------------------------------------------------
+git config --global user.name "usuarioGIT"
+
+--establece el usuario
+
+git config --global user.email "Email"
+
+--establece la cuenta de correo
+
+pwd
+
+--utilizamos el comando print working directory para imprimir el nombre del directorio actual
+--en una sesión de comandos bajo un sistema operativo UNIX o derivado
+
+mkdir Escenario1
+
+--creamos un directorio nuevo
+
+cd Escenario1
+
+--nos ubicamos dentro del directorio que hemos creado
+
+pwd
+
+ls -la
+--el comando ls muestra toda la información de los archivos como los permisos, usuario y grupo al 
+--que pertenece, el tamaño del archivo, fecha y hora de creación y nombre del archivo
+--la opción l muestra usuario, grupo, permisos, tamaño, fecha y hora de creación
+--la opción a muestra archivos dentro del directorio actual
+
+git init
+--crea un nuevo repositorio
+
+ls -la
+
+ls -lart .git/ 
+
+--la opción r muestra el contenido de todos los subdirectorios de forma recursiva
+--la opción t ordena los archivos por fecha de modificación
+
+pwd
+
+ls -l
+
+git status
+
+--muestra la lista de los archivos que se han cambiado junto con los archivos que estan 
+--por ser agregados 
+
+git add leeme.md
+--este comando se usa para añadir archivos al index
+
+git status
+
+git commit -m "mensaje de mi primer commit"
+
+--guarda los cambios en el repositorio local
+--opcion m permite establecer el mensaje del commit
+
+git status
+
+ls -la
+
+git log
+--muestra una lista de commits en una rama junto con los detalles
+
+

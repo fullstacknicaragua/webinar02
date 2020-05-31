@@ -1,0 +1,55 @@
+-------------------------------------Quinto escenario ----------------------------------
+-------------------------------Experimentando con ramas---------------------------------
+----------------------------------------------------------------------------------------
+
+mkdir Escenario5
+
+cd Escenario5
+
+git init
+
+git remote add origin https://gitlab.com/fullstacknicaragua/gitpruebas
+
+git fetch
+
+git pull origin master
+
+ls -lart
+
+git branch
+--obtiene una lista de todas las ramas
+
+git branch RamaPrueba master
+
+git checkout RamaPrueba
+--nos ubicamos en la rama RamaPrueba
+
+cd Sesion02/src/demoFiles
+
+ls -lart
+
+nano Persona.java
+--editamos el archivo
+
+git add *
+
+git commit -m "Trabajando con ramas"
+
+git status
+
+git push origin RamaPrueba
+
+ls -lart
+
+git checkout master
+--nos ubicamos en la rama master
+
+git merge RamaPrueba master
+--combinamos la RamaPrueba en master
+
+git status
+
+nano Persona.java
+
+git push origin master
+--subimos los cambios al almacen de repositorios de gitlab

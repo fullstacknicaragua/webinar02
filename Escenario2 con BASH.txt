@@ -1,0 +1,64 @@
+---------------------------------Segundo escenario -------------------------------------
+---------------------------------Aprobando cambios--------------------------------------
+----------------------------------------------------------------------------------------
+
+cd ..
+
+mkdir Escenario2
+
+cd Escenario2
+
+git init
+
+pwd
+
+ls -l
+
+echo "fichero 1" > fichero1.tmp
+
+echo "fichero 2" > fichero2.tmp
+
+echo "fichero 3" > fichero3.tmp
+
+echo "fichero 4" > fichero4.tmp
+
+ls -l
+
+git status
+
+nano .gitignore
+--el comando permite abrir el editor de texto nano
+--crea el archivo .gitignore
+
+git add
+
+git status
+
+git add .gitignore
+
+git commit -m "revisión 2 con el gitignore"
+
+git status
+
+git log --oneline
+
+ls -l
+
+git status
+
+echo "creo otro archivo leeme" > leeme2.md
+
+git status
+
+nano leeme2.md
+
+# es un fichero leeme.md
+
+git status
+
+git add .
+
+git commit -m "revision 3"
+
+git log --oneline
+

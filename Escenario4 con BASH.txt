@@ -1,0 +1,70 @@
+-------------------------------------Cuarto escenario ----------------------------------
+------------------------------------Deshaciendo cambios---------------------------------
+----------------------------------------------------------------------------------------
+
+cd ..
+
+mkdir Escenario4
+
+cd Escenario4
+
+git init
+
+git clone https://gitlab.com/fullstacknicaragua/gitpruebas
+
+ls -lart
+
+cd gitpruebas/Sesion02/src/demoFiles
+
+ls -la
+
+rm Persona.java
+
+ls -la
+
+git checkout HEAD -- .
+--el comando checkout reemplazará todo en el working directory 
+--a la última versión aprobada
+
+git add Persona.java
+
+git commit -m "Escenario 4.2"
+
+git log --oneline
+
+git reset 
+--Eliminara los ficheros del area de Staging y los dejará 
+--en el working directory en estado untracked (no registrados)
+
+nano Persona.java
+--añadimos un comentario
+
+git add Persona.java
+
+git commit -m "Escenario 4.3"
+
+git status
+
+git log --oneline
+
+git reset --hard HEAD~2
+--este comando es una combinación de git reset y git checkout en un unico comando
+--eliminara los ficheros de la Staging Area y del Working Directory de tal forma
+--que volvamos a los mismos contenidos que estaban presentes en el ultimo commit
+
+git log --oneline
+
+nano Persona.java
+--añadimos comentario en escenario 4.4
+
+git add .
+
+git commit -m "Escenario 4.4"
+
+git log --oneline
+
+git revert d030e03
+
+nano Persona.java
+
+
